@@ -12,23 +12,22 @@ class Node {
 
 class Solution {
 
-    public static  Node insert(Node head,int data) {
+    public static Node insert(Node head,int data) {
 
         if(head == null)
         {
             return new Node(data);
         }
-        else
-        {
-            Node trav = head;
-            while(trav.next != null)
-            {
-                trav = trav.next;
-            }
 
-            trav.next = new Node(data);
-            trav = head;
+        Node trav = head;
+        while(trav.next != null)
+        {
+            trav = trav.next;
         }
+
+        trav.next = new Node(data);
+        trav = head;
+
 
         return head;
 
