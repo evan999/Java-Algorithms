@@ -1,4 +1,3 @@
-//Complete this code or write your own from scratch
 import java.util.*;
 import java.io.*;
 
@@ -11,12 +10,11 @@ class Solution{
         for(int i = 0; i < n; i++){
             String name = in.next();
             String phone = in.next();
-            // Write code here
+
             phonebook.put(name, phone);
         }
         while(in.hasNext()){
             String name = in.next();
-            // Write code here
             
             if(phonebook.containsKey(name))
             {
