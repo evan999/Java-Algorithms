@@ -13,8 +13,8 @@ public class Solution {
     static int hourglassSum(int[][] arr) {
 
         int maxSum = Integer.MIN_VALUE;
-        int rows = 6;
-        int cols = 6;
+        int ROWS = 6;
+        int COLS = 6;
 
         for (int row = 0; row < rows - 2; row++)
         {
