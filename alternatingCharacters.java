@@ -9,8 +9,7 @@ import java.util.regex.*;
 public class Solution {
 
     static int alternatingCharacters(String s) {
-
-        StringBuilder alternatingString = new StringBuilder();
+			
         int minDeletions = 0;
 
         for(int i = 1; i < s.length(); i++){
