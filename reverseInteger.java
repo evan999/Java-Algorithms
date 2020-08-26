@@ -7,6 +7,8 @@ class Solution {
 					int digit = x % 10;
 					reversed = reversed * 10 + digit;
 					x = x / 10;
-			}   
+			}
+			
+			return reversed;
 	}
 }
