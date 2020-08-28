@@ -27,8 +27,7 @@ class Result {
             else {
                 continue;
             }
-				}
+        }
         return dupes;
-    }
 
 }

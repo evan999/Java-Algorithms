@@ -1,0 +1,12 @@
+ALTER TABLE Stocks
+ADD COLUMN stock_symbol varchar(50),
+ADD COLUMN stock_name varchar(50),
+ADD COLUMN last_price varchar(50),
+ADD COLUMN price_change varchar(50),
+ADD COLUMN change_rate varchar(50),
+ADD COLUMN currency varchar(50),
+ADD COLUMN market_time varchar(50),
+ADD COLUMN volume varchar(50),
+ADD COLUMN average_volume varchar(50),
+ADD COLUMN market_cap varchar(50),
+ADD COLUMN time_scraped timestamptz;
