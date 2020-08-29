@@ -17,13 +17,8 @@ public class Solution {
 
         for(int position = 0; position < q.length; position++)
         {
-            //int bribes = 0;
-            // Keep track of how many times each person moves.
-            // Each move = 1 bribe
-            //System.out.println(q[position-1]);
             int currentValue = q[position];
             int currentPosition = position+1;
-            //System.out.println(currentValue);
             
             if(currentPosition!=q[position]){
                 int difference = 0;
