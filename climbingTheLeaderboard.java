@@ -8,25 +8,18 @@ import java.util.regex.*;
 
 public class Solution {
 
-    // Complete the climbingLeaderboard function below.
+    
     static int[] climbingLeaderboard(int[] scores, int[] alice) {
 
         int[] rank = new int[alice.length];
 
         for(int game = 0; game < alice.length; game++){
-            // Compare with the scores array for each game to determine ranking
-            // Determine ranking at end of each game
+
 
             for(int j = 0; j < scores.length; j++){
-                // Loop through each score in the leaderboard
-                // Let's first try BRUTE FORCE solution
-                // Downside to this approach:
-                // Will need to optimize and refactor later to pass other test cases
-                // Compare each score in scores array to Alice's current game
 
-                // Come up with ranking system
                 if(alice[game][j] > score[game][j]){
-                 
+                    // TODO: Ranking system
                 }
             }
             
