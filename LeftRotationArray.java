@@ -8,7 +8,6 @@ import java.util.regex.*;
 
 public class Solution {
 
-    // Complete the rotLeft function below.
     static int[] rotLeft(int[] a, int d) {
 
         int n = 1;
@@ -21,13 +20,11 @@ public class Solution {
                 {
                     a[element] = a[a.length-1];
                     a[a.length-1] = newIndex;
-                    //System.out.println("Element: " + temp);
                     continue;
                 }
                 
                 a[element] = a[element-1];
                 a[element - 1] = newIndex;
-                //System.out.println("Element: " + temp);
             }
             n++;
         }
