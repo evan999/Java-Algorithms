@@ -14,12 +14,10 @@ public class Solution {
         int[] rank = new int[alice.length];
 
         for(int game = 0; game < alice.length; game++){
-
-
             for(int j = 0; j < scores.length; j++){
-
                 if(alice[game][j] > score[game][j]){
                     // TODO: Ranking system
+                    
                 }
             }
             
