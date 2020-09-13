@@ -10,23 +10,34 @@ public class Solution {
 
     static int makeAnagram(String a, String b) {
 
+        HashMap<Character, Integer> frequency = new HashMap<Character, Integer>();
+        char[] strA = a.toCharArray();
+        char[] strB = b.toCharArray();
 
-        int count1[] = new int[26];  
-        int count2[] = new int[26]; 
-
-        for (int character = 0; character < a.length(); character++)
-        {
-            count1[a.charAt(character) - 'a']++;
-            
+        for(char c : strA){
+            if (frequency.containsKey(c)){
+                frequency.put(c, frequency.get(c) + 1);
+            }
+            else {
+                frequency.put(c, 1);
+            }
         }
 
-        for (int character = 0; character < b.length(); character++)
-        {
-            count2[b.charAt(character) - 'a']++;
-        } 
+        for(char c : strB){
+            if (frequency.containsKey(c)){
+                frequency.put(c, frequency.get(c) - 1);
+            }
+            else{
+                frequency.put(c, 1);
+            }
+        }
 
-        
+        int deletions = 0;
+        for(int value : frequency.values()){
+            deletions += Math.abs(value);
+        }
 
+        return deletions;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
